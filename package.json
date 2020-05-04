@@ -1,0 +1,17 @@
+{
+  "name": "chime-test-server",
+  "version": "0.1.0",
+  "description": "Amazon Chime Temp Server",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "amazon-chime-sdk-js": "^1.4.0",
+    "aws-sdk": "^2.659.0",
+    "compression": "^1.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Osuka42g/chime-test-server"
+  }
+}
