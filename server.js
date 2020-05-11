@@ -26,6 +26,11 @@ const log = (message) => {
 const server = require(protocol).createServer(
   options,
   async (request, response) => {
+    response.setHeader("Access-Control-Allow-Origin", "*");
+    response.setHeader("Access-Control-Request-Method", "*");
+    response.setHeader("Access-Control-Allow-Methods", "OPTIONS, GET");
+    response.setHeader("Access-Control-Allow-Headers", "*");
+
     log(`${request.method} ${request.url} BEGIN`);
     compression({})(request, response, () => {});
     try {
